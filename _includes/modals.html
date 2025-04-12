@@ -14,23 +14,31 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                  {% for image in post.images %}
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/portfolio/{{ image }}">
-                                  </div>
-                                  {% endfor %}
+                            <div id="carousel-{{ post.title | slugify }}" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                {% for image in post.images %}
+                                  <li data-target="#carousel-{{ post.title | slugify }}" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+                                {% endfor %}
+                              </ol>
+                            
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                {% for image in post.images %}
+                                <div class="item {% if forloop.first %}active{% endif %}">
+                                  <img src="{{ image }}" alt="Slide {{ forloop.index }}">
                                 </div>
-                                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Indietro</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Avanti</span>
-                                </a>
+                                {% endfor %}
                               </div>
+                            
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#carousel-{{ post.title | slugify }}" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                              </a>
+                              <a class="right carousel-control" href="#carousel-{{ post.title | slugify }}" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                              </a>
+                            </div>
                             <p>{{ post.description }}</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
                         </div>
