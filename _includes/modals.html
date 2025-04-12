@@ -26,17 +26,20 @@
                               <div class="carousel-inner">
                                 {% for image in post.images %}
                                 <div class="item {% if forloop.first %}active{% endif %}">
-                                  <img src="img/portfolio/{{ image }}" alt="Slide {{ forloop.index }}">
+                                  <img src="img/portfolio/{{ image }}" class="center-block img-responsive" alt="Slide {{ forloop.index }}">
                                 </div>
                                 {% endfor %}
                               </div>
                             
                               <!-- Controls -->
-                              <a class="left carousel-control" href="#carousel-{{ post.title | slugify }}" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
+                              <a class="left carousel-control text-center" href="#carousel-{{ post.title | slugify }}" data-slide="prev">
+                                <span class="fa fa-chevron-left fa-2x" style="position: absolute; top: 50%; left: 25%; transform: translateY(-50%);"></span>
+                                <span class="sr-only">Indietro</span>
                               </a>
-                              <a class="right carousel-control" href="#carousel-{{ post.title | slugify }}" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
+                              
+                              <a class="right carousel-control text-center" href="#carousel-{{ post.title | slugify }}" data-slide="next">
+                                <span class="fa fa-chevron-right fa-2x" style="position: absolute; top: 50%; left: 75%; transform: translateY(-50%);"></span>
+                                <span class="sr-only">Avanti</span>
                               </a>
                             </div>
                             <p>{{ post.description }}</p>
