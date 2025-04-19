@@ -4,15 +4,21 @@ subtitle: Website Design
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+thumbnail: 01_1.jpg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
 images:
-  - dreams.png
-  - escape.png
+  - 01_1.jpg
+  - 01_2.jpg
+  - 01_3.jpg
+  - 01_4.jpg
+  - 01_5.jpg
+  - 01_6.jpg
+  - 01_7.jpg
+  - 01_8.jpg
+  - 01_9.jpg
 description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 
 ---
