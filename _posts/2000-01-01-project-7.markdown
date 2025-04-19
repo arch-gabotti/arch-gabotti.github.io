@@ -12,7 +12,6 @@ category: Web Development
 images:
   - 07_1.jpg
   - 07_2.jpg
-  - 07_3.jpg
 description: Ristrutturazione bagno con piastrelle effetto granito e doccia in linea
 
 ---
