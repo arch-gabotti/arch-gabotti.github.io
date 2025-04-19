@@ -1,0 +1,22 @@
+---
+title: Dreams
+subtitle: Website Design
+layout: default
+modal-id: 10
+date: 2014-07-18
+thumbnail: 10_1.jpg
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+images:
+  - 10_1.jpg
+  - 10_2.jpg
+  - 10_3.jpg
+  - 10_4.jpg
+  - 10_5.jpg
+  - 10_6.jpg
+  - 10_7.jpg
+description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+
+---
