@@ -13,6 +13,6 @@ images:
   - 08_1.jpg
   - 08_2.jpg
   - 08_3.jpg
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: Ristrutturazione bagno con doccia in nicchia e finiture ad effetto materico
 
 ---

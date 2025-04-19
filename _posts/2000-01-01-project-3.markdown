@@ -21,6 +21,5 @@ images:
   - 03_9.jpg
   - 03_10.jpg
   - 03_11.jpg
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
-
+description: Ristrutturazione completa di trilocale con living openspace e camera con cabina armadio
 ---
