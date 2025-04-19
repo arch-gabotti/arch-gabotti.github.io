@@ -21,5 +21,5 @@ images:
   - 03_9.jpg
   - 03_10.jpg
   - 03_11.jpg
-description: Ristrutturazione completa di trilocale con living openspace e camera con cabina armadio
+description: Ristrutturazione completa di trilocale con living open space e camera con cabina armadio
 ---
