@@ -17,6 +17,6 @@ images:
   - 10_5.jpg
   - 10_6.jpg
   - 10_7.jpg
-description: Ristrutturazione completa appratamento trilocale con living open space
+description: Ristrutturazione completa appartamento trilocale con living open space
 
 ---
