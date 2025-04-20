@@ -15,11 +15,11 @@
                             <!--<h2>{{ post.title }}</h2>
                             <hr class="star-primary">
                             -->
-                            <div id="carousel-{{ post.title | slugify }}" class="carousel slide" data-ride="carousel">
+                            <div id="carousel-{{ post.modal-id }}" class="carousel slide" data-ride="carousel">
                               <!-- Indicators -->
                               <ol class="carousel-indicators">
                                 {% for image in post.images %}
-                                  <li data-target="#carousel-{{ post.title | slugify }}" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+                                  <li data-target="#carousel-{{ post.modal-id  }}" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
                                 {% endfor %}
                               </ol>
                             
@@ -33,12 +33,12 @@
                               </div>
                             
                               <!-- Controls -->
-                              <a class="left carousel-control text-center" href="#carousel-{{ post.title | slugify }}" data-slide="prev">
+                              <a class="left carousel-control text-center" href="#carousel-{{ post.modal-id }}" data-slide="prev">
                                 <span class="fa fa-chevron-left fa-2x" style="position: absolute; top: 50%; left: 20%; transform: translateY(-50%);"></span>
                                 <span class="sr-only">Indietro</span>
                               </a>
                               
-                              <a class="right carousel-control text-center" href="#carousel-{{ post.title | slugify }}" data-slide="next">
+                              <a class="right carousel-control text-center" href="#carousel-{{ post.modal-id }}" data-slide="next">
                                 <span class="fa fa-chevron-right fa-2x" style="position: absolute; top: 50%; right: 20%; transform: translateY(-50%);"></span>
                                 <span class="sr-only">Avanti</span>
                               </a>
