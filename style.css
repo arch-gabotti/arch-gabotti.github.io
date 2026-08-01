@@ -382,11 +382,6 @@ footer {
   .portfolio-item img, .card img {
     max-height: 220px;
   }
-  .service-icon {
-    width: 48px;
-    height: 48px;
-    font-size: 1.2rem;
-  }
   h1.display-4 {
     font-size: 2.2rem;
   }
