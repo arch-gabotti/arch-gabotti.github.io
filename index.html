@@ -1,20 +1,169 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arch. Giulia Gabotti | Architetto e Interior Designer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container-fluid d-flex align-items-center px-0">
+      <a class="navbar-brand menu-logo ps-3" href="index.html">Arch. Giulia Gabotti</a>
+      <div class="d-flex flex-grow-1">
+        <div class="collapse navbar-collapse w-100" id="navbarNav">
+          <ul class="navbar-nav menu-links mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#chi-sono">Chi sono</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="navbar-nav d-none d-lg-flex align-items-center menu-social pe-3 ms-auto">
+        <li class="nav-item"><a class="nav-link px-2" href="https://www.linkedin.com/in/giulia-gabotti/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
 
-<div class="home">
+  <!-- Hero Section -->
+  <header id="home" class="hero-section d-flex align-items-center" style="background-position: 29% 0; height:100vh; background: url('Progetti/Progetto\ 1/progetto/1.jpg') center center / cover no-repeat;">
+    <div class="hero-text-band">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3">Arch. Giulia Gabotti</h1>
+        <p class="lead">Ogni casa è il riflesso di chi la abita. <br class="d-none d-md-inline">Trasformerò i tuoi desideri in uno spazio su misura.</p>
+        <a href="#chi-sono" class="btn btn-primary mt-3 px-4">Scopri di pi&ugrave;</a>
+        <a href="contatti.html" class="btn btn-outline-dark btn-ghost mt-3 px-4">Contattami</a>
+      </div>
+    </div>
+  </header>
 
-  <h1>Posts</h1>
+  <!-- Chi Sono -->
+  <section id="chi-sono" class="py-5" style="background: #fff;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="images/foto.jpg" alt="Architetto" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Chi sono</h2>
+          <p>Benvenuti nel mio studio. Sono Giulia Gabotti, architetto con esperienza nell’ambito dell’architettura residenziale e dell’interior design. Creo ambienti che riflettano le vostre aspirazioni e raccontino la vostra storia.<br>Credo che ogni progetto sia una conversazione profonda con chi lo abiterà: dalla trasformazione completa alla consulenza su misura, ti aiuterò a realizzare il tuo rifugio ideale.</p>
+          <a href="chi-sono.html" class="btn btn-primary mt-3">Scopri di più</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- Servizi -->
+  <section id="servizi" class="py-5" style="background: #f6fafb; scroll-margin-top: 65px; padding-top: 3rem !important; padding-bottom: 2rem !important;">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Servizi</h2>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 text-center border-0 bg-transparent">
+            <div class="service-icon mb-3"><i class="fa-solid fa-ruler-combined fa-2x"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Ristrutturazioni complete</h5>
+              <p class="card-text">Rinnovamento completo degli interni, dalla progettazione al dettaglio finale.</p>
+              <a href="ristrutturazioni.html" class="btn btn-primary btn-sm mt-2">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center border-0 bg-transparent">
+            <div class="service-icon mb-3"><i class="fa-solid fa-couch fa-2x"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Consulenze d'arredo</h5>
+              <p class="card-text">Consulenze e soluzioni di interior design personalizzate per ogni esigenza.</p>
+              <a href="rendering-consulenze.html" class="btn btn-primary btn-sm mt-2">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center border-0 bg-transparent">
+            <div class="service-icon mb-3"><i class="fa-solid fa-city fa-2x"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Valorizzazione affitti brevi</h5>
+              <p class="card-text">Massimizza il potenziale del tuo immobile per affitti brevi, con design funzionale e accogliente.</p>
+              <a href="valorizzazione-affitti-brevi.html" class="btn btn-primary btn-sm mt-2">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-5" style="padding-top: 2rem !important;">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Portfolio</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <a href="progetto-1.html" class="text-decoration-none text-reset">
+            <div class="portfolio-item card border-0 bg-transparent">
+              <img src="Progetti/Progetto 1/progetto/1.jpg" class="card-img-top rounded shadow-sm" alt="Progetto 1">
+              <div class="card-body p-0 pt-2">
+                <h6 class="fw-bold">Ristrutturazione casa A+G: funzionalità ed estetica</h6>
+            
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="progetto-2.html" class="text-decoration-none text-reset">
+            <div class="portfolio-item card border-0 bg-transparent">
+              <img src="Progetti/Progetto 2/logo/Progetto 2_1.jpg" class="card-img-top rounded shadow-sm" alt="Progetto 2">
+              <div class="card-body p-0 pt-2">
+                <h6 class="fw-bold">Ristrutturazione completa per la prima casa</h6>
+                
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="progetto-3.html" class="text-decoration-none text-reset">
+            <div class="portfolio-item card border-0 bg-transparent">
+              <img src="Progetti/Progetto 3/logo/progetto 3_3.jpg" class="card-img-top rounded shadow-sm" alt="Progetto 3">
+              <div class="card-body p-0 pt-2">
+                <h6 class="fw-bold">Un bagno rinnovato per nuovi inquilini</h6>
+                
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <a href="portfolio.html" class="btn btn-primary btn-sm">Vedi altri progetti</a>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- Contatti / Footer -->
+  <section id="contatti" class="py-5" style="background:#f6fafb;">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Contatti</h2>
+      <p class="mb-4">Hai bisogno di qualche info in più? Clicca qui sotto per farmi sapere le tue esigenze ed essere ricontattato a breve senza impegno!
+      </p>
+      <a href="contatti.html" class="btn btn-primary px-4">Contattami!</a>
+      <div class="social mt-4">
+        <a href="https://www.linkedin.com/in/giulia-gabotti/" target="_blank" class="text-reset mx-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 small text-muted" style="background:#fff;">
+    <div class="container">
+      <div>&copy; Arch. Giulia Gabotti 2026 &mdash; <a href="#" class="text-muted">Privacy Policy</a> &middot; <a href="#" class="text-muted">Termini di Utilizzo</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

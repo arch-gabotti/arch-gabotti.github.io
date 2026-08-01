@@ -1,3 +1,570 @@
----
-layout: style
----
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap');
+
+body {
+  font-family: 'Segoe UI', 'Montserrat', 'Arial', sans-serif;
+  background: #f6fafb;
+  color: #232d2e;
+}
+
+.hero-section {
+  background: linear-gradient(120deg, #e8f1f0, #f6fafb);
+  position: relative;
+}
+.hero-text-band {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(8px);
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section .lead {
+  font-weight: 350;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.25);
+}
+.hero-section .display-4 {
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 767px) {
+  .hero-text-band {
+    padding: 2rem 0;
+  }
+}
+
+h1, h2, .fw-bold {
+  color: #232d2e;
+  letter-spacing: 0.5px;
+}
+
+section {
+  min-height: unset;
+}
+#servizi {
+  scroll-margin-top: 65px;
+}
+#chi-sono {
+  scroll-margin-top: 65px;
+}
+#portfolio {
+  scroll-margin-top: 65px;
+}
+#contatti {
+  scroll-margin-top: 65px;
+}
+
+.navbar {
+  width: 100vw;
+  min-width: 100vw;
+  margin: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
+  height: 65px;
+  min-height: 56px;
+  max-height: 56px;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.nav-link.active {
+  border-bottom: 2px solid #348891;
+  color: #348891 !important;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: #348891 !important;
+}
+
+.card {
+  border-radius: 18px;
+  box-shadow: none;
+}
+.card-title {
+  color: #348891;
+}
+.service-icon {
+  width: 62px;
+  height: 62px;
+  background: #e8f1f0;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #348891;
+  margin: 0 auto 1rem auto;
+}
+
+.btn-primary {
+  background: #348891;
+  border: none;
+  border-radius: 24px;
+  transition: background 0.18s;
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+  background: #1d6b78;
+}
+.btn-outline-primary {
+  border-radius: 24px;
+  color: #348891;
+  border-color: #b9dcd5;
+}
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  opacity: .54;
+}
+.btn-outline-dark {
+  border-radius: 24px;
+}
+
+
+img {
+  object-fit: cover;
+  max-height: 400px;
+}
+.portfolio-item img {
+  border-radius: 8px;
+}
+
+footer {
+  background: #fff;
+}
+.social a {
+  color: #232d2e;
+  opacity: 0.6;
+  transition: opacity 0.18s;
+}
+.social a:hover {
+  opacity: 1;
+}
+
+.menu-logo {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #363636 !important;
+  margin-right: 0;
+  padding-left: 1.5rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  height: 66px;
+}
+.menu-links .nav-link {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #383838 !important;
+  font-size: 1.07rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+}
+.menu-links .nav-link.active, .menu-links .nav-link:focus, .menu-links .nav-link:hover {
+  color: #43b6bd !important;
+  border-bottom: 2px solid #43b6bd;
+  background: none;
+}
+.menu-social .nav-link {
+  color: #757575 !important;
+  font-size: 1.25rem;
+  transition: color 0.13s;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+.menu-social .nav-link:hover {
+  color: #43b6bd !important;
+}
+.menu-social {
+  margin-left: auto !important;
+  padding-right: 1.5rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+.menu-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 56px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  pointer-events: none;
+  z-index: 1;
+}
+.menu-logo, .menu-social {
+  z-index: 3;
+}
+.container-fluid {
+  width: 100vw !important;
+  min-width: 100vw;
+  display: flex !important;
+  padding: 0;
+  align-items: center;
+  height: 56px;
+}
+@media (max-width: 991px) {
+  .navbar, .container-fluid, .menu-logo, .menu-social, .menu-links {
+      height: auto !important;
+      min-height: auto !important;
+      max-height: unset !important;
+  }
+  .menu-links {
+      position: static;
+      width: 100%;
+  }
+  .hero-section {
+    padding: 60px 0 40px 0;
+  }
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+  .portfolio-item img, .card img {
+    max-height: 220px;
+  }
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+  h1.display-4 {
+    font-size: 2.2rem;
+  }
+  .menu-logo {
+      font-size: 1.05rem;
+  }
+  .hero-section .display-4 {
+      font-size: 2rem;
+  }
+}
+
+/* Center servizi cards and equalize spacing */
+#servizi .col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#servizi .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#servizi .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 240px;
+}
+#servizi .btn {
+  background: #348891;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  padding: 0.4rem 2.4rem;
+  box-shadow: none;
+  transition: background 0.18s;
+}
+#servizi .btn:hover, #servizi .btn:focus {
+  background: #1d6b78;
+  color: #fff;
+}
+#servizi .btn.disabled, #servizi .btn:disabled {
+  opacity: 0.7;
+  background: #3695a1;
+  color: #fff;
+  border: none;
+}
+#portfolio .btn {
+  background: #348891;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  padding: 0.4rem 2.4rem;
+  box-shadow: none;
+  transition: background 0.18s;
+}
+#portfolio .btn:hover, #portfolio .btn:focus {
+  background: #1d6b78;
+  color: #fff;
+}
+#portfolio .btn.disabled, #portfolio .btn:disabled {
+  opacity: 0.7;
+  background: #3695a1;
+  color: #fff;
+  border: none;
+}
+#contatti .btn {
+  background: #348891;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  padding: 0.4rem 2.4rem;
+  box-shadow: none;
+  transition: background 0.18s;
+}
+#contatti .btn:hover, #contatti .btn:focus {
+  background: #1d6b78;
+  color: #fff;
+}
+#chi-sono .btn {
+  background: #348891;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  padding: 0.4rem 2.4rem;
+  box-shadow: none;
+  transition: background 0.18s;
+}
+#chi-sono .btn:hover, #chi-sono .btn:focus {
+  background: #1d6b78;
+  color: #fff;
+}
+#chi-sono .btn.disabled, #chi-sono .btn:disabled {
+  opacity: 0.7;
+  background: #3695a1;
+  color: #fff;
+  border: none;
+}
+/* Servizi page styles */
+.servizi-page .col {
+  display: flex;
+}
+.servizi-page .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.servizi-page .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.servizi-page .card-text {
+  flex-grow: 1;
+}
+.servizi-page .btn {
+  background: #348891;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  padding: 0.4rem 2.4rem;
+  box-shadow: none;
+  transition: background 0.18s;
+  margin-top: auto;
+  align-self: center;
+}
+.servizi-page .btn:hover, .servizi-page .btn:focus {
+  background: #1d6b78;
+  color: #fff;
+}
+/* Service detail pages hero */
+.hero-section {
+  position: relative;
+}
+.hero-section .hero-text-band {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.50);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .hero-section .hero-text-band {
+    padding: 1.5rem 0;
+  }
+}
+/* Project carousel styles */
+.carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.carousel img {
+  object-fit: contain !important;
+  max-height: 80vh !important;
+  background: #f6fafb;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(52, 136, 145, 0.8);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: 20px 20px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(52, 136, 145, 1);
+}
+@media (max-width: 767px) {
+  .carousel img {
+    max-height: 60vh !important;
+    object-fit: contain !important;
+  }
+}
+
+/* --- HERO MAIN TITLE: match navbar logo exactly --- */
+.hero-section .display-4 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #363636;
+  font-size: 2.8rem;
+}
+@media (max-width: 767px) {
+  .hero-section .display-4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Remove any unwanted font/weight/letterspacing from general h1 or .fw-bold that could override this in hero */
+
+/* Uniforma il font dei paragrafi lead nella pagina chi-sono con l'introduzione */
+.chi-sono-section .lead {
+  font-family: 'Segoe UI', 'Montserrat', 'Arial', sans-serif;
+}
+
+/* FAQ Accordion Styling */
+#faqAccordion .accordion-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#faqAccordion .accordion-item:last-child {
+  border-bottom: none;
+}
+
+#faqAccordion .accordion-button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+#faqAccordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  box-shadow: none;
+}
+
+#faqAccordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+#faqAccordion .accordion-body {
+  background: transparent;
+  padding: 0 0 1rem 0;
+}
+
+/* Service description lead paragraph styling */
+.service-description-section .lead {
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  color: #232d2e;
+}
+
+/* Service phases columns styling */
+.service-phases > [class*="col-"] {
+  display: flex;
+}
+
+.service-phase-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.service-phase-column h4 {
+  width: 100%;
+}
+
+.service-phase-column p {
+  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Package columns styling */
+.package-columns > [class*="col-"] {
+  display: flex;
+}
+
+.package-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.package-column ul {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.package-column ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.package-pricing {
+  margin-top: auto;
+}
+
+.package-price {
+  font-size: 1.25rem;
+}
+
+.service-description-section .row.g-4 .col-md-4 {
+  padding: 1.5rem;
+}
+
+.service-description-section .row.g-4 .col-md-4 ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.service-description-section .row.g-4 .col-md-4 ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
